@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1030C27E1A366D7700091ABD /* load.png in Resources */ = {isa = PBXBuildFile; fileRef = 1030C27B1A366D7700091ABD /* load.png */; };
+		1030C27F1A366D7700091ABD /* ontouch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1030C27C1A366D7700091ABD /* ontouch.png */; };
+		1030C2801A366D7700091ABD /* afterfocus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1030C27D1A366D7700091ABD /* afterfocus.png */; };
 		104D080E1A35612700D00F9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 104D080D1A35612700D00F9F /* main.m */; };
 		104D08111A35612700D00F9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 104D08101A35612700D00F9F /* AppDelegate.m */; };
 		104D08141A35612700D00F9F /* SearchSubView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 104D08121A35612700D00F9F /* SearchSubView.xcdatamodeld */; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1030C27B1A366D7700091ABD /* load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load.png; sourceTree = "<group>"; };
+		1030C27C1A366D7700091ABD /* ontouch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ontouch.png; sourceTree = "<group>"; };
+		1030C27D1A366D7700091ABD /* afterfocus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afterfocus.png; sourceTree = "<group>"; };
 		104D08081A35612700D00F9F /* SearchSubView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchSubView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		104D080C1A35612700D00F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		104D080D1A35612700D00F9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 		104D080B1A35612700D00F9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1030C27B1A366D7700091ABD /* load.png */,
+				1030C27C1A366D7700091ABD /* ontouch.png */,
+				1030C27D1A366D7700091ABD /* afterfocus.png */,
 				104D080C1A35612700D00F9F /* Info.plist */,
 				104D080D1A35612700D00F9F /* main.m */,
 			);
@@ -207,6 +216,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1030C27E1A366D7700091ABD /* load.png in Resources */,
+				1030C2801A366D7700091ABD /* afterfocus.png in Resources */,
+				1030C27F1A366D7700091ABD /* ontouch.png in Resources */,
 				104D081D1A35612700D00F9F /* Main.storyboard in Resources */,
 				104D08221A35612700D00F9F /* LaunchScreen.xib in Resources */,
 				104D081F1A35612700D00F9F /* Images.xcassets in Resources */,
@@ -422,6 +434,7 @@
 				104D08331A35612700D00F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		104D08341A35612700D00F9F /* Build configuration list for PBXNativeTarget "SearchSubViewTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +443,7 @@
 				104D08361A35612700D00F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
