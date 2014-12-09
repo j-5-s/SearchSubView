@@ -38,20 +38,11 @@
                                         <segment title="Second"/>
                                     </segments>
                                 </segmentedControl>
-                                <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlY-fR-UHW">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="pGg-6v-bdr" id="3Y6-kv-6eh"/>
-                                    </connections>
-                                </searchBar>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="Dp0-t0-Dys" secondAttribute="trailing" id="3Cj-ZR-yRG"/>
-                                <constraint firstItem="rlY-fR-UHW" firstAttribute="leading" secondItem="uVo-6C-Afb" secondAttribute="leading" id="424-kJ-ijw"/>
                                 <constraint firstItem="Dp0-t0-Dys" firstAttribute="leading" secondItem="uVo-6C-Afb" secondAttribute="leading" id="Rtg-h0-Txq"/>
-                                <constraint firstAttribute="trailing" secondItem="rlY-fR-UHW" secondAttribute="trailing" id="fW5-UU-BMn"/>
                             </constraints>
                         </view>
                         <prototypes>
@@ -85,6 +76,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
                     <connections>
+                        <outlet property="headerView" destination="uVo-6C-Afb" id="Y5L-AQ-twp"/>
                         <outlet property="searchDisplayController" destination="P2d-VZ-UQw" id="Ucn-tu-sd3"/>
                     </connections>
                 </tableViewController>
@@ -92,7 +84,6 @@
                 <searchDisplayController id="P2d-VZ-UQw">
                     <connections>
                         <outlet property="delegate" destination="pGg-6v-bdr" id="3H5-eo-5eh"/>
-                        <outlet property="searchBar" destination="rlY-fR-UHW" id="n0Y-8i-j1h"/>
                         <outlet property="searchContentsController" destination="pGg-6v-bdr" id="zPI-Wq-MVa"/>
                         <outlet property="searchResultsDataSource" destination="pGg-6v-bdr" id="jUu-MO-idO"/>
                         <outlet property="searchResultsDelegate" destination="pGg-6v-bdr" id="rhO-n5-KDP"/>

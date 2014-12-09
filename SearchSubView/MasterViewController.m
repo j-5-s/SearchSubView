@@ -26,6 +26,23 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    _searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+//    [self.headerView addSubview:_searchController.searchBar];
+    _searchController.searchResultsUpdater = self;
+    [_searchController.searchBar sizeToFit];
+    [_headerView addSubview:_searchController.searchBar];
+    //self.tableView.tableHeaderView = _searchController.searchBar;
+    // we want to be the delegate for our filtered table so didSelectRowAtIndexPath is called for both tables
+   // self.resultsTableController.tableView.delegate = self;
+    _searchController.delegate = self;
+    _searchController.dimsBackgroundDuringPresentation = NO; // default is YES
+    _searchController.searchBar.delegate = self; // so we can monitor text changes + others
+    
+    // Search is now just presenting a view controller. As such, normal view controller
+    // presentation semantics apply. Namely that presentation will walk up the view controller
+    // hierarchy until it finds the root view controller or one that defines a presentation context.
+    //
+    self.definesPresentationContext = YES;  // know where you want UISearchController to be displayed
 }
 
 - (void)didReceiveMemoryWarning {
@@ -205,5 +222,6 @@
     [self.tableView reloadData];
 }
  */
-
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+}
 @end
